@@ -14,11 +14,16 @@
   <!-- Area de texto -->
   <div>
     <form>
-      <textarea id="textareaTweet" maxlength="140" placeholder="Escribe un tweet..."></textarea>
+      <textarea id="textareaTweet" maxlength="140" placeholder="Escribe un tweet..." onKeyDown="count()" onKeyUp="count()" name="tweet"></textarea>
     </form>
+    <!-- contador de caracteres -->
+    <tr> 
+        <td></td> 
+        <td><input type="text" name="caracteres" size=4></td> 
+   </tr> 
     <button id="btn">TWEET</button>
   </div>
-  <div id="tweetSent"></div>
+  <div id="tweetSent" class="tweet-sent"></div>
   <script src="assets/js/main.js"></script>
 </body>
 
